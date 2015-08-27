@@ -23,3 +23,5 @@ endif
 
 setlocal comments=:#
 setlocal commentstring=#\ %s
+
+compiler exunit
