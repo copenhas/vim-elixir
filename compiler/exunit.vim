@@ -16,7 +16,7 @@ let s:cpo_save = &cpo
 set cpo-=C
 
 CompilerSet makeprg=mix\ test
-CompilerSet errorformat=%E==\ Compilation\ error\ %.%#,%C**\ (%[%^)]%#)\ %f:%l:\ %m,%-C\ \ \ \ (%.%#,%E\ \ %*\\d)\ %.%#,%C\ \ \ \ \ stacktrace:,%C\ \ \ \ \ \ \ (%[%^)]%#)\ %f:%l:\ %.%#,%C\ \ \ \ \ \ \ %f:%l,%C\ \ \ \ \ %[%^:]%#:%*\\d,%C\ \ \ \ \ %m,%-G%.%#
+CompilerSet errorformat=%E==\ Compilation\ error\ %.%#,%C**\ (%[%^)]%#)\ %f:%l:\ %m,%-C\ \ \ \ (%.%#,%E\ \ %*\\d)\ %.%#,%C\ \ \ \ \ stacktrace:,%C\ \ \ \ \ \ \ (elixir)\ %[%^:]%#:%*\\d:\ %m,%C\ \ \ \ \ \ \ (%[%^)]%#)\ %f:%l:\ %.%#,%C\ \ \ \ \ \ \ %f:%l,%C\ \ \ \ \ %[%^:]%#:%*\\d,%C\ \ \ \ \ %m,%-G%.%#,%-A%.%#
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
